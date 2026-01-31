@@ -1,0 +1,171 @@
+/*body de Html*/
+body {
+    font-size: 20pt;
+    background-color:#A9A9A9;
+}
+/*couleurs de titres*/
+h1 {
+    color:#1f1235;
+}
+/*l'ensemble des éléments de nav*/
+nav {
+    Display:grid;
+    grid-auto-columns:auto;
+    font-family:serif;
+    font-size:20px;
+    color:grey;
+    
+}
+   /*Heading*/
+h1, h2, h3,h4{ 
+    color:white;
+    font-family:Arialsans-serif;
+    text-align:center;
+}
+#imagewhatsapp{
+    width:5px;
+    height:5px;
+}
+/*L'image*/
+img{
+    width:100%;
+    height:auto;
+    border-radius:5px 5px 5px 5px;
+    border:5px solid #2f2942;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    
+}
+/*Stylisation de navigateur*/
+        
+nav a{
+    Display:flex;
+    display:block;
+   justify-content:row;
+    margin:20px;
+    padding:15px;
+    background-color:#2f2942;
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    text-align:center;
+    text-decoration-color:#001F40 ;
+    transition:background-color 0.3ease;
+    
+   }
+   /*stylisation de boutons de navigateur*/
+  .button-section:hover{
+      background-color:#808080 ;
+  }
+  /*connaissance linguistique et loisirs*/
+    .list-item{
+     font-size:1.2em;
+     color:#966336;
+     text-align:center;
+     line-height:1;
+     
+ }
+   /*Paragraphes*/
+   p{
+       font-family:'Arial',sans-serif;
+       font-size:25px;
+       font-weight:Normal;
+       color:black;
+       line-height:1.5;
+       margin:10px;
+       padding:20px;
+       text-align:auto;
+       
+       
+   }
+   h1{
+       background:linear-gradient(
+           to right,
+            black,
+            green,
+            deeppink
+       );
+       background-clip:text;
+       text-fill-color:transparent;
+       color:transparent;
+       background-size:200% auto;
+       animation:shine 5s linear infinite;
+   }
+   @keyframes shine{
+       0%{
+           background-position:0% 50%;
+       }
+       100%{
+         background-position:200% 50%; 
+       }
+   }
+    /*Video Responsive*/
+   @media(orientation:portrait) {
+       video{
+           width:100%;
+           height:auto;
+       }
+   }
+   @media (orientation:landscape){
+       video{
+           width:100vw;
+           height:100vh;
+       }
+   }
+   @media (orientation:portrait){
+       video{
+           max-width:100%;
+           height:100%;
+       }
+   }
+   @media (orientation:landscape){
+       video{
+           width:100%;
+           height:auto;
+           
+       }
+   }
+   /*footer Stylisation*/
+   *{
+       margin:0;
+       padding:0;
+       box-sizing:border-box;
+       font-family:'poppins',Sans-serif;
+   
+   }
+   footer{
+       display:grid;
+       height:auto;
+       width:auto;
+       place-items:center;
+       background:black;
+   }
+   a{
+       text-decoration:none;
+       color:#FFFFFF;
+   }
+    footer.social-buttons {
+            display:flexbox;
+            justify-content: space-around;
+            color:white;
+            margin:0 12px;
+            height:60px;
+            width:60px;
+            float:left;
+            overflow:hidden;
+            cursor:pointer;
+            border-radius:50px;
+            
+        }
+        .social-button {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            margin:20px;
+            color:white;
+        }
+       .social-button:facebook{
+           cursor:pointer;
+       }
